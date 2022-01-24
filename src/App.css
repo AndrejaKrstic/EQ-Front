@@ -154,6 +154,7 @@ body {
   color: #dc2f02;
   width: 100%;
   outline: none;
+  display: inline;
 }
 .input-password-register {
   border-top-style: hidden;
@@ -227,4 +228,78 @@ body {
   margin-left: auto;
   width: fit-content;
   margin-top: 50px;
+}
+.navbar {
+  color: white;
+  font-size: 20px;
+  background-color: #76c893;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.navbar-brand {
+  font-size: 50px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+.navbar-toggler {
+  background-color: #1f6a3a;
+}
+.navbar-toggler-icon {
+  color: white;
+}
+.dropdown-item {
+  background-color: #76c893;
+  color: white;
+  height: fit-content;
+}
+.dropdown-toggle {
+  background-color: #76c893;
+  color: white;
+  height: fit-content;
+  text-decoration: none;
+  margin: 10px;
+}
+.item-napredak {
+  color: white;
+  height: fit-content;
+  text-decoration: none;
+  margin: 10px;
+}
+.ul {
+  background-color: #76c893;
+}
+.name-item {
+  position: absolute;
+  right: 30px;
+}
+.circle-home-1 {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  left: -10%;
+  top: -10%;
+  background: #52b69a;
+  filter: blur(200px);
+  z-index: -1;
+}
+.circle-home-2 {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 40%;
+  bottom: -20%;
+  background: #d9ed92;
+  filter: blur(100px);
+  z-index: -1;
+}
+.circle-home-3 {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  left: 80%;
+  bottom: 87%;
+  background: #168aad;
+  filter: blur(100px);
+  z-index: -1;
 }
