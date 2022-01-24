@@ -17,6 +17,7 @@ function MenuBar({ token }) {
     axios(config).then((res) => {
       console.log(res.data);
       window.sessionStorage.setItem("auth_token", null);
+      window.sessionStorage.setItem("imePrezime", null);
     });
     navigate("/login");
     e.preventDefault();

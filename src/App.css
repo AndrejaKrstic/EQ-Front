@@ -19,14 +19,21 @@ body {
 }
 .input-username-login {
   border-top-style: hidden;
-  border-left-style: hidden;
-  border-right-style: hidden;
+  border-left-style: none;
+  border-right-style: none;
   border-width: 1.5px;
-  background-color: transparent;
+  background-color: #90e0ef;
   width: 100%;
   margin-top: 20px;
   outline: none;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .input-password-login {
   border-top-style: hidden;
   border-left-style: hidden;
