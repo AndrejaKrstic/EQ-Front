@@ -43,6 +43,11 @@ input:-webkit-autofill:active {
   width: 100%;
   outline: none;
 }
+.txt-login-error {
+  color: red;
+  font-size: 15px;
+  display: none;
+}
 .btn-login {
   color: white;
   background-color: #0077b6;
@@ -309,4 +314,104 @@ input:-webkit-autofill:active {
   background: #168aad;
   filter: blur(100px);
   z-index: -1;
+}
+.div-levels {
+  height: fit-content;
+  width: 30%;
+  max-width: 600px;
+  min-width: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.button-level {
+  margin: 10px;
+  display: inline;
+  color: white;
+  background-color: #76c893;
+  border-style: none;
+  border-radius: 22px;
+  padding: 10px;
+  width: 100px;
+}
+.button-level:hover {
+  color: #0077b6;
+}
+
+.div-vezbanje-roda {
+  height: fit-content;
+  text-align: center;
+  width: 30%;
+  max-width: 600px;
+  min-width: 300px;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  padding-bottom: 10px;
+}
+.btn-rod {
+  margin: 10px;
+  display: inline;
+  color: white;
+  background-color: #76c893;
+  border-style: none;
+  border-radius: 22px;
+  padding: 10px;
+  width: 100px;
+}
+.btn-rod:hover {
+  color: #0077b6;
+}
+.txt-vezbanje-roda {
+  margin-bottom: 20vh;
+  font-size: 4vh;
+}
+.rec-vezbanje-roda {
+  margin-bottom: 15vh;
+}
+.progress {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+.div-exit-vezbanje-rod {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.button-exit-vezbanje-rod {
+  background: transparent;
+  border-style: none;
+  font-size: 3vh;
+  color: #0077b6;
+}
+.txt-tacan-rod {
+  color: red;
+  display: none;
+}
+.div-welcome {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: fit-content;
+}
+.txt-welcome {
+  font-size: 7vh;
+  color: #0077b6;
 }

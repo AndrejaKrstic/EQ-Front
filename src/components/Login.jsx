@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-function Login({ addToken }) {
+function Login() {
   document.body.style.overflowY = "hidden";
   const [userData, setUserData] = useState({
     korisnicko_ime: "",
@@ -24,8 +24,12 @@ function Login({ addToken }) {
         console.log(res.data);
         window.sessionStorage.setItem("auth_token", res.data.access_token);
         window.sessionStorage.setItem("imePrezime", res.data.imePrezime);
-        addToken(res.data.access_token);
-        navigate("/");
+        //addToken(res.data.access_token);
+        if (res.data.success == false) {
+          document.getElementById("txt-login-error").style.display = "block";
+        } else {
+          navigate("/");
+        }
       })
       .catch((e) => console.log(e));
   }
@@ -44,6 +48,7 @@ function Login({ addToken }) {
             type="username"
             name="korisnicko_ime"
             onInput={handleInput}
+            required
           />
           <p className="txt-login">Korisničko ime</p>
           <input
@@ -51,8 +56,12 @@ function Login({ addToken }) {
             type="password"
             name="password"
             onInput={(e) => handleInput(e)}
+            required
           />
           <p className="txt-login">Lozinka</p>
+          <p className="txt-login-error" id="txt-login-error">
+            Profil sa unetim podacima ne postoji, pokušajte ponovo.
+          </p>
           <button className="btn-login" type="submit">
             Uloguj se
           </button>
