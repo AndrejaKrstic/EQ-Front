@@ -24,7 +24,7 @@ function Login() {
         console.log(res.data);
         window.sessionStorage.setItem("auth_token", res.data.access_token);
         window.sessionStorage.setItem("imePrezime", res.data.imePrezime);
-        //addToken(res.data.access_token);
+        window.sessionStorage.setItem("id", res.data.id);
         if (res.data.success == false) {
           document.getElementById("txt-login-error").style.display = "block";
         } else {

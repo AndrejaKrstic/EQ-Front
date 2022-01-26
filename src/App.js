@@ -7,8 +7,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import VezbanjeRoda from "./components/VezbanjeRoda";
 import LevelSelect from "./components/LevelSelect";
-import MojNapredak from "./components/MojNapredak";
 import MainMenu from "./components/MainMenu";
+import Progress from "./components/Progress";
+import ProgressItem from "./components/ProgressItem";
 
 function App() {
   const [level, setLevel] = useState();
@@ -51,7 +52,7 @@ function App() {
           element={
             <>
               <MenuBar />
-              <MojNapredak />
+              <Progress />
             </>
           }
         />

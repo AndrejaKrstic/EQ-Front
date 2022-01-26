@@ -9,12 +9,12 @@ import { useNavigate } from "react-router-dom";
 function VezbanjeRoda({ level }) {
   let navigate = useNavigate();
   const [practiseData, setPractiseData] = useState({
-    naziv_vezbanja: "Vezbanje roda",
+    naziv_vezbanja: "Vežbanje roda",
     nivo_vezbanja: level,
     tacno: 0,
     netacno: 0,
   });
-  const notify = () => toast("Niste gotovi sa vezbom!");
+  const notify = () => toast("Niste gotovi sa vežbom!");
   document.body.style.overflowY = "hidden";
   let tacno = 0;
   let netacno = 0;

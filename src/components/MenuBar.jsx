@@ -18,6 +18,7 @@ function MenuBar() {
       console.log(res.data);
       window.sessionStorage.setItem("auth_token", null);
       window.sessionStorage.setItem("imePrezime", null);
+      window.sessionStorage.setItem("id", null);
     });
 
     navigate("/login");
