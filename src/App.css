@@ -559,3 +559,6 @@ input:-webkit-autofill:active {
 .div-promena-lozinke {
   display: none;
 }
+.txt-uspeh-promene {
+  display: none;
+}
