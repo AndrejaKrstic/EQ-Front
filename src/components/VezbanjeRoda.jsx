@@ -140,9 +140,7 @@ function VezbanjeRoda({ level }) {
           id="div-zadatak-vezbanje-roda"
         >
           <h3 className="rec-vezbanje-roda" id="rec-vezbanje-roda"></h3>
-          <h3 className="txt-tacan-rod" id="txt-tacan-rod">
-            fasdf
-          </h3>
+          <h3 className="txt-tacan-rod" id="txt-tacan-rod"></h3>
           <div
             className="div-vezbanje-roda-buttons"
             id="div-vezbanje-roda-buttons"

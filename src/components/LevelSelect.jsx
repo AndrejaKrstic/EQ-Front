@@ -3,14 +3,22 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-function LevelSelect({ selektujLevel }) {
+function LevelSelect({ selektujLevel, vezbanjeID }) {
   let level;
   let navigate = useNavigate();
   function handleLevel(number) {
     level = number;
     console.log(level);
     selektujLevel(level);
-    navigate("/vezbanje-roda");
+    console.log(vezbanjeID);
+    switch (vezbanjeID) {
+      case 1:
+        navigate("/vezbanje-roda");
+        break;
+      case 2:
+        navigate("/vezbanje-prevoda");
+        break;
+    }
   }
 
   return (

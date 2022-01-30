@@ -75,7 +75,7 @@ function MenuBar() {
                     >
                       <li>
                         <Link
-                          to="/izbor-nivoa"
+                          to="/izbor-nivoa/1"
                           className="dropdown-item"
                           href="/izbor-nivoa"
                         >
@@ -83,9 +83,13 @@ function MenuBar() {
                         </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link
+                          to="/izbor-nivoa/2"
+                          className="dropdown-item"
+                          href="/izbor-nivoa"
+                        >
                           Vezbanje prevoda &gt;
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -120,9 +124,9 @@ function MenuBar() {
                       style={{ backgroundColor: "#76c893" }}
                     >
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link to="/moj-nalog" className="dropdown-item">
                           Moj nalog
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <a

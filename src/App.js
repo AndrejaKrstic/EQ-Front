@@ -9,7 +9,8 @@ import VezbanjeRoda from "./components/VezbanjeRoda";
 import LevelSelect from "./components/LevelSelect";
 import MainMenu from "./components/MainMenu";
 import Progress from "./components/Progress";
-import ProgressItem from "./components/ProgressItem";
+import VezbanjePrevoda from "./components/VezbanjePrevoda";
+import MojNalog from "./components/MojNalog";
 
 function App() {
   const [level, setLevel] = useState();
@@ -30,11 +31,20 @@ function App() {
           }
         />
         <Route
-          path="/izbor-nivoa"
+          path="/izbor-nivoa/1"
           element={
             <>
               <MenuBar />
-              <LevelSelect selektujLevel={selektujLevel} />
+              <LevelSelect selektujLevel={selektujLevel} vezbanjeID={1} />
+            </>
+          }
+        />
+        <Route
+          path="/izbor-nivoa/2"
+          element={
+            <>
+              <MenuBar />
+              <LevelSelect selektujLevel={selektujLevel} vezbanjeID={2} />
             </>
           }
         />
@@ -53,6 +63,24 @@ function App() {
             <>
               <MenuBar />
               <Progress />
+            </>
+          }
+        />
+        <Route
+          path="/vezbanje-prevoda"
+          element={
+            <>
+              <MenuBar />
+              <VezbanjePrevoda level={level} />
+            </>
+          }
+        />
+        <Route
+          path="/moj-nalog"
+          element={
+            <>
+              <MenuBar />
+              <MojNalog />
             </>
           }
         />
