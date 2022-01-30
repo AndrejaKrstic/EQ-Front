@@ -3,7 +3,7 @@ import "./App.css";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import MenuBar from "./components/MenuBar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import VezbanjeRoda from "./components/VezbanjeRoda";
 import LevelSelect from "./components/LevelSelect";
@@ -84,6 +84,7 @@ function App() {
             </>
           }
         />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );

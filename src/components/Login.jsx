@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import logo from "./logo-blue.png";
 
 function Login() {
   document.body.style.overflowY = "hidden";
@@ -39,7 +40,8 @@ function Login() {
       <span className="circle-login-2"></span>
       <span className="circle-login-3"></span>
       <span className="circle-login-4"></span>
-      <p className="txt-logo-login">EQ</p>
+      {/* <p className="txt-logo-login">EQ</p> */}
+      <img src={logo} className="img-logo-blue" />
       <div className="div-login" style={{ color: "#0077B6" }}>
         <h3>Login</h3>
         <form className="form-login" onSubmit={handleLogin}>

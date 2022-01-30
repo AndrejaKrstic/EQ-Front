@@ -25,7 +25,7 @@ function Progress() {
   return (
     <>
       <div className="div-progress">
-        {progressList == null ? (
+        {progressList == null || progressList.length === 0 ? (
           <>
             <div>
               <h3>Nema istorije vežbanja</h3>

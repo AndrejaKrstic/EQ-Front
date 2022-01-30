@@ -40,7 +40,12 @@ function MenuBar() {
           <span className="circle-home-3"></span>
           <nav className="navbar navbar-expand-xl navbar-dark">
             <div className="container-fluid">
-              <Link to="/" className="navbar-brand" href="/">
+              <Link
+                to="/"
+                className="navbar-brand"
+                href="/"
+                style={{ color: "#0077b6" }}
+              >
                 EQ
               </Link>
               <button

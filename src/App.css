@@ -454,7 +454,6 @@ input:-webkit-autofill:active {
   margin-left: 20px;
   margin-right: 20px;
   height: fit-content;
-  text-align: center;
 }
 .div-progress-vezbanje {
   margin-right: 0px;
@@ -561,4 +560,28 @@ input:-webkit-autofill:active {
 }
 .txt-uspeh-promene {
   display: none;
+}
+.img-logo-blue {
+  width: 12vh;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.img-logo-orange {
+  width: 20vh;
+  position: absolute;
+  left: 50%;
+  top: 11%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media all and (max-width: 768px) {
+  .img-logo-orange {
+    top: 5%;
+  }
+}
+.txt-progres-nazivi {
+  color: #0077b6;
 }
